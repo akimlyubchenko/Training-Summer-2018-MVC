@@ -1,0 +1,160 @@
+﻿
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#links a img:hover{
+    opacity: 1;
+}
+
+#links a img {
+    opacity: 0.8;
+}
+
+#links{
+    text-align: center;
+}
+
+.pagination-container{
+    text-align: center;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card-header h3, .card-title {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.col-md-4 .card-body {
+    display: none;
+}
+
+.card:hover .card-body {
+    display: block;
+}
+
+.container {
+    margin-top: 90px;
+}
+
+.col-md-4 .card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    padding: 3px;
+    border-radius: 11px 11px 11px 11px;
+}
+
+.col-md-6 .card-body:hover {
+    background-color: #28A800 !important;
+}
+
+#nav-other {
+    list-style: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: #E1E1E0;
+    width: 100%;
+}
+
+    #nav-other li {
+        float: right;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+        #nav-other li p:hover {
+            color: #FFF;
+        }
+
+#nav-epam {
+    float: left !important;
+    color: #FFF;
+    font-family: sans-serif;
+    margin-top: 0px !important;
+    font-size: 35px;    
+}
+
+
+/*---------------mobile-------------------*/
+
+
+@media only screen and (max-width: 900px) {
+    .col-md-4 .card-body {
+        display: block;
+    }
+
+    .card {
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        border-radius: 11px 11px 11px 11px;
+    }
+
+    #nav-other li p {
+        margin-bottom: 0;
+        border: 1px double #E1E1E0;
+        border-radius: 7px 7px 7px 7px;
+        padding: 5px;
+    }
+
+    #nav-other li{
+        margin-top: 0px;
+    }
+
+    #nav-other li p:hover {
+        border: 1px double #FFF;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #nav-other {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+        #nav-other li {
+            margin-right: 15px;
+            margin-top: 1%;
+        }
+
+    #nav-epam {
+        margin-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 363px) {
+    #nav-other li {
+        width: 100%;
+        margin: 0;
+    }
+
+    .navbar {
+        height: 200px !important;
+    }
+
+    #nav-other li {
+        margin-bottom: 9px;
+        padding-right: 10px;
+    }
+
+
+}
