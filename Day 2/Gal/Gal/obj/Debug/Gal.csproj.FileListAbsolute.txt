@@ -98,4 +98,3 @@ D:\VSSolutions\Training-Summer-2018-MVC\Day 2\Gal\Gal\bin\PagedList.dll
 D:\VSSolutions\Training-Summer-2018-MVC\Day 2\Gal\Gal\bin\PagedList.Mvc.dll
 D:\VSSolutions\Training-Summer-2018-MVC\Day 2\Gal\Gal\bin\PagedList.xml
 D:\VSSolutions\Training-Summer-2018-MVC\Day 2\Gal\Gal\bin\PagedList.Mvc.xml
-D:\VSSolutions\Training-Summer-2018-MVC\Day 2\Gal\Gal\obj\Debug\Gal.csprojAssemblyReference.cache

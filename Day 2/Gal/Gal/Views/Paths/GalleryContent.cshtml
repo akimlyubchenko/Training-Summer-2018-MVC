@@ -1,0 +1,17 @@
+﻿@model PagedList.IPagedList<Gal.Models.Path>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "GalleryContent";
+}
+
+<div id="links">
+    @foreach (var item in Model)
+    {
+        <a href="@item.FullPath" data-gallery>
+            <img src="@item.SmallPath" class="img-rounded" style="margin-bottom:10px;margin-right: 10px;" />
+        </a>
+    }
+
+    @Html.PagedListPager(Model, page => Url.Action("GalleryContent", new { page = page}),
+       PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions(){  HttpMethod = "GET", UpdateTargetId = "links" }))
+</div>

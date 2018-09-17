@@ -13,9 +13,5 @@ namespace Gal.Models
         }
 
         public virtual DbSet<Path> Paths { get; set; }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-        }
     }
 }

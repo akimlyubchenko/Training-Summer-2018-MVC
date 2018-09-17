@@ -30,5 +30,19 @@ namespace Gal.Controllers
             int pageNumber = (page ?? 1);
             return View(records.ToPagedList(pageNumber, pageSize));
         }
+
+        public ActionResult GalleryContent(int? page)
+        {
+            var records = new List<Path>();
+
+            foreach (var item in db.Paths)
+            {
+                records.Add(item);
+            }
+
+            int pageSize = 5;
+            int pageNumber = (page ?? 1);
+            return PartialView(records.ToPagedList(pageNumber, pageSize));
+        }
     }
 }

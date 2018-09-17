@@ -10,15 +10,12 @@
 </head>
 <body>
     <nav class="navbar bg-primary" style="height: 65px;">
-        <!-- <a class="navbar-brand" href="#"><h2>EPAM</h2></a> -->
-        <div style="display: flex; width: 100%;padding-top: 5px;">
             <ul id="nav-other">
                 <li id="nav-epam">EPAM</li>
                 <li><p>Info</p></li>
                 <li><p>News</p></li>
                 <li><p>Home</p></li>
             </ul>
-        </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
@@ -38,6 +35,7 @@
     @Scripts.Render("~/bundles/jquery")
     <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
     <script src="~/Scripts/bootstrap-image-gallery.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
